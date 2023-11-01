@@ -11,10 +11,18 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    /* --font-primary-tah: 'Poppins'; */
+    --primary-color: #F34213;
+    --secondary-color: #FBFBFF;
+    --tertiary-color: #F1F2EE;
+    --quaternary-color: #363636;
+}
+
 h1,
 h2,
 h3 {
-    color: black;
+    color: var(--secondary-color);
 }
 
 h1 {
@@ -22,51 +30,220 @@ h1 {
 }
 
 h2 {
-    font-size: 4em;
-}
-
-h3 {
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 p {
     margin: 0;
 }
 
-header {
+/* CARRUSEL */
+#carouselExampleCaptions {
     width: 100%;
     height: 100vh;
-    position: sticky;
-    top: calc(-100vh + 8%);
-    z-index: 1;
-    background-image: url(../media/fondo.jpg);
     background-size: cover;
-    background-position: right;
-    background-attachment: fixed;
+    background-position: center;
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+#carouselExampleCaptions p {
+    font-size: 2em;
+}
+
+#direct > p {
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+#carouselExampleCaptions a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#direct {
+    width: 25%;
+    margin: 1.5% 0;
+    padding: 1%;
+    color: var(--quaternary-color);
+    background-color: #f344137e;
+    text-align: center;
+    border: 0.1em var(--quaternary-color) solid;
+}
+
+#direct > p:hover {
+    color: var(--quaternary-color);
+}
+
+
+/* MENÚ */
+#menu {
+    background-color: var(--tertiary-color);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu>ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 2%;
+}
+
+.logo {
+    height: 60%;
+    padding-left: 3%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#menu>ul>li {
+    padding: 3%;
+    list-style: none;
+}
+
+#menu>ul>li>a {
+    font-size: 1.2em;
+    color: var(--quaternary-color);
+    text-decoration: none;
+}
+
+#menu>ul>li>a:hover {
+    color: var(--primary-color);
+}
+
+#menu>i,
+#menu>ul>li:last-child {
+    display: none;
+}
+
+
+/* GENERAL */
+main {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+section {
+    width: 80%;
+    height: 92%;
+    margin: 0 auto;
+    padding: 7% 0 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    color: var(--primary-color);
+    font-size: 3em;
+    align-self: flex-start;
+}
+
+
+/* ABOUT */
+#about > div {
+    display: flex;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
 
 
-header > a {
-    width: 25%;
-    margin-top: 1%;
+
+
+
+/* FOOTER */
+footer{
+    background-color:#F34213;
+    color: var(--tertiary-color);
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+footer>figure {
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>figure>img {
+    width: 20%;
+    margin-bottom: 2%;
+}
+
+footer>figure>figcaption {
+    width: 40%;
+    margin-top: 8%;
+    color: #FBFBFF;
+}
+
+footer>p {
+    font-size: 1.1em;
+    padding-top: 1%;
+    color: #FBFBFF;
+}
+
+.contact .email a {
+    color:  #FBFBFF;
     text-decoration: none;
 }
 
-#direct {
-    padding: 4%;
-    color: black;
-    font-size: 1.2em;
-    text-align: center;
-    border: 0.15em black solid;
-    /* border-radius: 100%; */
+.contact .email a:hover{
+    color: #363636;
 }
 
-#direct > p:hover {
-    font-weight: bold;
-    transform: scale(120%);
+.socialmedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.socialmedia .social {
+    padding: 1em;
+}
+
+.socialmedia .social a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.socialmedia .social img {
+    height: 100%;
+    width: 60%;
+}
+
+#legal {
+    width: 80%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    color: #FBFBFF;
 }
