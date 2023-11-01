@@ -1,3 +1,14 @@
+/*form*/
+.col-md-4{
+    padding-left: 5%;
+}
+.col-md-6{
+    padding: 1%;
+}
+.col-md-3{
+    padding: 1%;
+}
+
 /*footer*/
 footer{
     background-color:#F34213;
