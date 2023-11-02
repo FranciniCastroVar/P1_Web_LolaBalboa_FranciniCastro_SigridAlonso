@@ -9,11 +9,17 @@
 /*form*/
 main>form{
     padding: 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 main>form>.form{
     font-size: 1.1em;
     color: var(--primary-color);
+}
+
+main>form>.col-12{
+    padding: 1%;
 }
 
 main>form>.col-12>button{
