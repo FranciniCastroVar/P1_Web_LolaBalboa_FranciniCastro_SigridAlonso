@@ -16,17 +16,6 @@ main>form>.form{
     color: var(--primary-color);
 }
 
-main>form>.col-md-4{
-}
-
-main>form>.col-md-6{
-
-}
-
-main>form>.col-md-3{
- 
-}
-
 main>form>.col-12>button{
     background-color: var(--primary-color);
 }
@@ -91,11 +80,7 @@ footer>p {
 .socialmedia .social a {
     color: inherit;
     text-decoration: none;
-}
-
-.socialmedia .social img {
-    height: 100%;
-    width: 60%;
+    font-size: 2em;
 }
 
 #legal {
@@ -103,5 +88,5 @@ footer>p {
     padding-top: 3%;
     display: flex;
     justify-content: space-between;
-    color: #FBFBFF;
+    color: var(--secondary-color);
 }

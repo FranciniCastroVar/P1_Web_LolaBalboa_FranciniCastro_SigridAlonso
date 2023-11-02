@@ -58,6 +58,7 @@ footer>p {
 .socialmedia .social a {
     color: inherit;
     text-decoration: none;
+    font-size: 2em;
 }
 
 .socialmedia .social img {
