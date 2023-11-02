@@ -24,10 +24,13 @@ h3 {
 
 h1 {
     font-size: 5em;
+    font-family: var(--font-secundary-tah);
+    text-shadow: #0000007e 3px 3px 3px;
 }
 
 h2 {
     font-size: 3.5em;
+    text-shadow: #0000007e 3px 3px 3px;
 }
 
 p {
@@ -36,22 +39,14 @@ p {
 
 
 /* CARRUSEL */
-#carouselExampleCaptions {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed !important;
-}
-
 .carousel-inner img {
-    max-width: 100%;
     height: 100vh;
-    vertical-align: middle;
+    object-fit: cover;
 }
 
 #carouselExampleCaptions p {
     font-size: 2em;
+    text-shadow: #0000007e 3px 3px 3px;
 }
 
 #direct>p {
@@ -66,6 +61,8 @@ p {
 }
 
 
+
+
 /* BOTÓN */
 #direct {
     width: 25%;
@@ -75,6 +72,10 @@ p {
     background-color: #f344137e;
     text-align: center;
     border: 0.1em var(--secondary-color) solid;
+}
+
+#direct>p {
+    text-shadow: none;
 }
 
 #direct>p:hover {
@@ -178,19 +179,51 @@ h3 {
 
 
 /* ABOUT */
-#container {
+.container {
+    padding: 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
-#container>p {
+.container>p {
     padding-right: 4%;
 }
 
 #about>p {
     padding-top: 3%;
 }
+
+
+/* MARCAS */
+.post {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h5 {
+    font-size: 1.5em;
+    font-family: var(--font-secundary-tah);
+}
+
+.card-body {
+    background-color: var(--tertiary-color);
+}
+
+.card-body>a {
+    margin-top: 5%;
+    border: var(--primary-color);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body>a:hover {
+    background-color: var(--quaternary-color);
+    color: var(--secondary-color);
+}
+
 
 
 
@@ -209,6 +242,7 @@ h3 {
 footer {
     background-color: #F34213;
     color: var(--tertiary-color);
+    margin-top: 8%;
     padding: 3%;
     display: flex;
     flex-direction: column;
@@ -263,6 +297,7 @@ footer>p {
 }
 
 .socialmedia .social a {
+    font-size: 2em;
     color: inherit;
     text-decoration: none;
 }
