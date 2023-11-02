@@ -1,18 +1,15 @@
-/* @font-face {
-    src: url(fonts/kinetika-medium.ttf);
-    font-family: 'kinetika-medium';
-} */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'kinetika-medium'; */
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Questrial', sans-serif;
     scroll-behavior: smooth;
 }
 
 :root {
-    /* --font-primary-tah: 'Poppins'; */
+    --font-primary-tah: 'Questrial', sans-serif;
+    --font-secundary-tah: 'Lilita One', sans-serif;
     --primary-color: #F34213;
     --secondary-color: #FBFBFF;
     --tertiary-color: #F1F2EE;
@@ -37,12 +34,14 @@ p {
     margin: 0;
 }
 
+
 /* CARRUSEL */
 #carouselExampleCaptions {
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed !important;
 }
 
 .carousel-inner img {
@@ -55,7 +54,7 @@ p {
     font-size: 2em;
 }
 
-#direct > p {
+#direct>p {
     color: var(--secondary-color);
     font-size: 1.2em;
 }
@@ -66,6 +65,8 @@ p {
     justify-content: center;
 }
 
+
+/* BOTÓN */
 #direct {
     width: 25%;
     margin: 1.5% 0;
@@ -73,10 +74,10 @@ p {
     color: var(--quaternary-color);
     background-color: #f344137e;
     text-align: center;
-    border: 0.1em var(--quaternary-color) solid;
+    border: 0.1em var(--secondary-color) solid;
 }
 
-#direct > p:hover {
+#direct>p:hover {
     color: var(--quaternary-color);
 }
 
@@ -132,6 +133,20 @@ p {
     display: none;
 }
 
+.dropdown-menu {
+    width: 70%;
+    background-color: #f34413bd;
+}
+
+.dropdown-item {
+    color: var(--secondary-color);
+}
+
+.dropdown-item:hover {
+    color: var(--primary-color);
+    background-color: #f1f2eeba;
+}
+
 
 /* GENERAL */
 main {
@@ -156,17 +171,34 @@ section {
 
 h3 {
     color: var(--primary-color);
+    font-family: var(--font-secundary-tah);
     font-size: 3em;
     align-self: flex-start;
 }
 
 
 /* ABOUT */
-#about > div {
+#container {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
+
+#container>p {
+    padding-right: 4%;
+}
+
+#about>p {
+    padding-top: 3%;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -174,8 +206,8 @@ h3 {
 
 
 /* FOOTER */
-footer{
-    background-color:#F34213;
+footer {
+    background-color: #F34213;
     color: var(--tertiary-color);
     padding: 3%;
     display: flex;
@@ -212,11 +244,11 @@ footer>p {
 }
 
 .contact .email a {
-    color:  #FBFBFF;
+    color: #FBFBFF;
     text-decoration: none;
 }
 
-.contact .email a:hover{
+.contact .email a:hover {
     color: #363636;
 }
 
