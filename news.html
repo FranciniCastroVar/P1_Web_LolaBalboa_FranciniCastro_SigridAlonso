@@ -8,18 +8,110 @@
 
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <link rel="stylesheet" href="css\stylenews.css">
+
+    <script src="https://kit.fontawesome.com/c061708a52.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
 
     </header>
+    
     <main>
-
+        <form class="row g-3">
+          <div class="form">
+            <h3>Suscribete a nuestra Newsletter:</h3>
+          </div>
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationDefault01" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Primer apellido</label>
+              <input type="text" class="form-control" id="validationDefault02" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefaultUsername" class="form-label">Correo</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault03" class="form-label">Número de teléfono</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">Tlf.</span>
+                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">Preferencia de marca</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">...</option>
+                <option>Gucci</option>
+                <option>Prada</option>
+                <option>Dior</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Acepto terminos y condiciones
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar formulario</button>
+            </div>
+          </form>
     </main>
-    <footer>
 
+    <footer>
+        <figure>
+            <img src="img/logoglowyblanco.png" alt="logo">
+            <figcaption>
+                <p>© 2023 Glowy Outlet</p>
+            </figcaption>
+        </figure>
+       
+        <p>¡Síguenos en nuestras redes sociales para no
+            perderte nada!</p>
+
+        <div class="contact">
+          <div class="email">
+            <a href="mailto:GlowyOutlet@gmail.com" target="_blank">Email. GlowyOutlet@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="socialmedia">
+            <div class="social">
+                <a href="https://twitter.com/gucci?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <div class="social">
+                <a href="https://www.instagram.com/gucci/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/GUCCI/?locale=es_ES" target="_blank"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+        <div id="legal">
+          <p>CONDICIONES GENERALES</p>
+          <p>AVISO LEGAL</p>
+          <p>POLÍTICA DE PRIVACIDAD</p>
+          <p>POLÍTICA DE COOKIES</p>
+      </div>
     </footer>
     
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
