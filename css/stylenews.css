@@ -1,17 +1,39 @@
+:root {
+    /* --font-primary-tah: 'Poppins'; */
+    --primary-color: #F34213;
+    --secondary-color: #FBFBFF;
+    --tertiary-color: #F1F2EE;
+    --quaternary-color: #363636;
+}
+
 /*form*/
-.col-md-4{
-    padding-left: 5%;
+main>form{
+    padding: 5%;
 }
-.col-md-6{
-    padding: 1%;
+
+main>form>.form{
+    font-size: 1.1em;
+    color: var(--primary-color);
 }
-.col-md-3{
-    padding: 1%;
+
+main>form>.col-md-4{
+}
+
+main>form>.col-md-6{
+
+}
+
+main>form>.col-md-3{
+ 
+}
+
+main>form>.col-12>button{
+    background-color: var(--primary-color);
 }
 
 /*footer*/
 footer{
-    background-color:#F34213;
+    background-color:var(--primary-color);
     color: var(--tertiary-color);
     padding: 3%;
     display: flex;

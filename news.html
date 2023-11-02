@@ -17,6 +17,9 @@
     
     <main>
         <form class="row g-3">
+          <div class="form">
+            <h3>Suscribete a nuestra Newsletter:</h3>
+          </div>
             <div class="col-md-4">
               <label for="validationDefault01" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="validationDefault01" required>
@@ -34,7 +37,10 @@
             </div>
             <div class="col-md-6">
               <label for="validationDefault03" class="form-label">Número de teléfono</label>
-              <input type="text" class="form-control" id="validationDefault03" required>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">Tlf.</span>
+                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+              </div>
             </div>
             <div class="col-md-3">
               <label for="validationDefault04" class="form-label">Preferencia de marca</label>
@@ -100,5 +106,6 @@
       </div>
     </footer>
     
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
