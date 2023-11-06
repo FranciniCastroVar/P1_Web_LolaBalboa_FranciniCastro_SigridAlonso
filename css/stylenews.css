@@ -1,12 +1,37 @@
-/* @font-face {
-    src: url(fonts/kinetika-medium.ttf);
-    font-family: 'kinetika-medium';
-} */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'kinetika-medium'; */
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Questrial', sans-serif;
     scroll-behavior: smooth;
+}
+
+:root {
+    --font-primary-tah: 'Questrial', sans-serif;
+    --font-secundary-tah: 'Lilita One', sans-serif;
+    --primary-color: #F34213;
+    --secondary-color: #FBFBFF;
+    --tertiary-color: #F1F2EE;
+    --quaternary-color: #363636;
+}
+
+/* FORMULARIO */
+main>form{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+main>form>.form{
+    font-size: 1.1em;
+    color: var(--primary-color);
+}
+
+main>form>.col-12{
+    padding: 1%;
+}
+
+main>form>.col-12>button{
+    background-color: var(--primary-color);
 }

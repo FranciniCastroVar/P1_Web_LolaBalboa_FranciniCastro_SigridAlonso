@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Questrial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-primary-tah: 'Questrial', sans-serif;
+    --font-secundary-tah: 'Lilita One', sans-serif;
+    --primary-color: #F34213;
+    --secondary-color: #FBFBFF;
+    --tertiary-color: #F1F2EE;
+    --quaternary-color: #363636;
+}
