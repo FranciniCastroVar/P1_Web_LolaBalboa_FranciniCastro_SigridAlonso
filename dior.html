@@ -18,11 +18,25 @@
 
     <link rel="stylesheet" href="css/styledior.css" type="text/css">
 
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/a4c92e0f59.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <h1>DESCUBRE TODA LA COLECCIÓN</h1>
+        <h2>¡NO TE QUEDES SIN ELLAS!</h2>
+
+        <a href="#product">
+            <div class="bounce2">
+                <button id="direct" type="button">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+            </div>
+        </a>
+
         <nav id="menu">
             <!-- <i class="fas fa-bars" onclick="menu()"></i> -->
 
@@ -31,19 +45,17 @@
             </a>
             <ul>
                 <li>
-                    <a href="#about">SOBRE NOSOTRAS</a>
+                    <a href="#last">ÚLTIMAS NOVEDADES</a>
+                </li>
+                <li>
+                    <a href="#product">COLECCIÓN</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#brand" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">NUESTRAS MARCAS</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#dior.html">DIOR</a></li>
                         <li><a class="dropdown-item" href="#gucci.html">GUCCI</a></li>
                         <li><a class="dropdown-item" href="#prada.html">PRADA</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#brand">COLECCIÓN</a></li>
                     </ul>
                 </li>
                 <li>
@@ -57,46 +69,49 @@
     </header>
 
     <main>
+        <section id="last">
+            <h3>ULTIMAS NOVEDADES</h3>
+
+
+        </section>
         <section id="product">
-            <h3>TÍTULO</h3>
-            <p>Dior es una renombrada casa de moda francesa, famosa por su elegancia atemporal convirtiéndolo en un
-                referente.</p>
+            <h3>COLECCIÓN</h3>
 
             <div class="galery">
                 <figure>
-                    <img src="img/dior/d1a.png" alt="gafas dior butterfly">
+                    <img src="img/dior/butterfly_original.png" alt="gafas dior butterfly">
                     <a href="#modal-butterfly">
                         <figcaption>Gafas Dior Butterfly</figcaption>
                     </a>
                 </figure>
                 <figure>
-                    <img src="img/dior/d2a.png" alt="gafas dior basic">
+                    <img src="img/dior/basic_original.png" alt="gafas dior basic">
                     <a href="#modal-basic">
                         <figcaption>Gafas Dior Basic</figcaption>
                     </a>
                 </figure>
 
                 <figure>
-                    <img src="img/dior/d3a.png" alt="gafas dior montaigne">
+                    <img src="img/dior/montaigne_original.png" alt="gafas dior montaigne">
                     <a href="#modal-montaigne">
                         <figcaption>Gafas Dior Montaigne</figcaption>
                     </a>
                 </figure>
                 <figure>
-                    <img src="img/dior/d4a.png" alt="gafas dior signature">
+                    <img src="img/dior/signature_original.png" alt="gafas dior signature">
                     <a href="#modal-signature">
                         <figcaption>Gafas Dior Signature</figcaption>
                     </a>
                 </figure>
 
-                <!-- <figure>
-                    <img src="img/dior/d5a.png" alt="gafas dior promise">
+                <figure>
+                    <img src="img/dior/promise_original.png" alt="gafas dior promise">
                     <a href="#modal-promise">
                         <figcaption>Gafas Dior Promise</figcaption>
                     </a>
-                </figure> -->
+                </figure>
                 <figure>
-                    <img src="img/dior/d6a.png" alt="gafas dior infinity">
+                    <img src="img/dior/infinity_original.png" alt="gafas dior infinity">
                     <a href="#modal-infinity">
                         <figcaption>Gafas Dior Infinity</figcaption>
                     </a>
