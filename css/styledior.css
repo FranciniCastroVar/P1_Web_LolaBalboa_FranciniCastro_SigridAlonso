@@ -211,9 +211,10 @@ h3 {
     flex-direction: column;
 }
 
-/* .attribute {
-    text-align: end;
-} */
+.attribute {
+    padding: 3%;
+    background-color: var(--tertiary-color);
+}
 
 .attribute h5 {
     margin-top: 2%;

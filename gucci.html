@@ -16,14 +16,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css\styleindex.css" type="text/css">
+    <link rel="stylesheet" href="css/stylegucci.css" type="text/css">
 
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/a4c92e0f59.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-       <nav id="menu">
+        <h2>DESCUBRE TODA LA</h2>
+        <h1>COLECCIÓN DE GUCCI</h1>
+        <h2>¡NO TE QUEDES SIN ELLAS!</h2>
+
+        <a href="#product">
+            <div class="bounce2">
+                <button id="direct" type="button">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+            </div>
+        </a>
+
+        <nav id="menu">
             <!-- <i class="fas fa-bars" onclick="menu()"></i> -->
 
             <a href="index.html" class="logo">
@@ -31,23 +46,21 @@
             </a>
             <ul>
                 <li>
-                    <a href="#about">SOBRE NOSOTRAS</a>
+                    <a href="#last">ÚLTIMAS NOVEDADES</a>
+                </li>
+                <li>
+                    <a href="#product">COLECCIÓN</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#brand" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">NUESTRAS MARCAS</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#dior.html">DIOR</a></li>
-                        <li><a class="dropdown-item" href="#gucci.html">GUCCI</a></li>
-                        <li><a class="dropdown-item" href="#prada.html">PRADA</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#brand">COLECCIÓN</a></li>
+                        <li><a class="dropdown-item" href="dior.html">DIOR</a></li>
+                        <li><a class="dropdown-item" href="prada.html">PRADA</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#news.html">SUSCRÍBETE</a>
+                    <a href="news.html">SUSCRÍBETE</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-xmark"></i>
@@ -57,6 +70,236 @@
     </header>
 
     <main>
+        <section id="last">
+            <h3>ÚLTIMAS NOVEDADES</h3>
+
+            <div class="newproduct">
+                <div class="left">
+                    <img src="img/dior/light1.png" alt="gafas dior light">
+                    <img src="img/dior/light2.png" alt="gafas dior light">
+                    <img src="img/dior/modellight.png" alt="gafas dior light">
+                </div>
+                <div class="right">
+                    <div class="attribute">
+                        <h4>GAFAS DIOR LIGHT</h4>
+                        <h5>PRECIO</h5>
+                        <p>x</p>
+                        <h5>COLOR</h5>
+                        <p>x</p>
+                        <h5>DESCRIPCIÓN</h5>
+                        <p>x</p>
+                        <a class="btn btn-primary" href="" role="button">COMPRAR</a>
+
+                    </div>
+                    <div class="other">
+                        <h5>DISPONEBLE TAMBIÉN</h5>
+                        <h4>GAFAS DIOR NIGHT</h4>
+                        <div class="buynew">
+                            <a class="btn btn-primary" href="" role="button">COMPRAR</a>
+                        </div>
+                        <div class="night">
+                            <img src="img/dior/modelnight.png" alt="gafas dior night">
+                            <img src="img/dior/night.png" alt="gafas dior night">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product">
+            <h3>COLECCIÓN</h3>
+
+            <div class="galery">
+                <figure>
+                    <img src="img/gucci/sunflare_original.png" alt="gafas gucci sunflare">
+                    <a href="#modal-sunflare">
+                        <figcaption>Gafas Gucci Sunflare</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="img/gucci/radiantretro_original.png" alt="gafas gucci radiantretro">
+                    <a href="#modal-radiantretro">
+                        <figcaption>Gafas Gucci RadiantRetro</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <img src="img/gucci/solarchic_original.png" alt="gafas gucci solarchic">
+                    <a href="#modal-solarchic">
+                        <figcaption>Gafas Gucci SolarChic</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="img/gucci/redcat_original.png" alt="gafas gucci redcat">
+                    <a href="#modal-redcat">
+                        <figcaption>Gafas Gucci RedCat</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <img src="img/gucci/misticcat_original.png" alt="gafas gucci misticcat">
+                    <a href="#modal-misticcat">
+                        <figcaption>Gafas Gucci MisticCat</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="img/gucci/suntropic_original.png" alt="gafas gucci suntropic">
+                    <a href="#modal-suntropic">
+                        <figcaption>Gafas Gucci Suntropic</figcaption>
+                    </a>
+                </figure>
+            </div>
+
+
+            <div class="modal" id="modal-sunflare">
+                <div class="information">
+                    <div class="girl">
+                        <h4>Gafas Gucci Sunflare</h4>
+                        <img src="img/gucci/modelsunflare.png" alt="gafas gucci sunflare">
+                    </div>
+                    <div class="text">
+                        <h5>PRECIO</h5>
+                        <p>200€</p>
+                        <h5>COLOR</h5>
+                        <p>Metal Dorado</p>
+                        <h5>DESCRIPCIÓN</h5>
+                        <p>Las gafas de sol Gucci Sunflare son el equilibrio perfecto entre moda y funcionalidad.
+                            Diseñadas para quienes desean lucir elegantes y proteger sus ojos de los rayos dañinos del
+                            sol, estas gafas de sol te ofrecen una experiencia única en cada uso.
+                            <br>
+                            Con lentes de alta calidad que bloquean el 100% de los rayos UVA y UVB, tus ojos estarán
+                            protegidos de los daños causados por la exposición al sol.
+                        </p>
+                        <a class="btn btn-primary" href="" role="button">COMPRAR</a>
+                    </div>
+                </div>
+                <p><a href="#product">X</a></p>
+            </div>
+
+            <div class="modal" id="modal-radiantretro">
+                <div class="information">
+                    <div class="girl">
+                        <h4>Gafas Gucci RadiantRetro</h4>
+                        <img src="img/gucci/modelradiantretro.png" alt="gafas gucci radiantretro">
+                    </div>
+                    <div class="text">
+                        <h5>PRECIO</h5>
+                        <p>160€</p>
+                        <h5>COLOR</h5>
+                        <p>Acetato Negro</p>
+                        <h5>DESCRIPCIÓN</h5>
+                        <p>La montura de acetato negro combina durabilidad y estilo. Su diseño geométrico es versátil y
+                            se adapta a una amplia variedad de estilos y formas de rostro.
+                            <br>
+                            Las gafas de sol Gucci RadiantRetro son mucho más que un accesorio; son una declaración de
+                            estilo y un escudo contra los rayos del sol. Con un diseño vanguardista y una combinación de
+                            características impresionantes, estas gafas se convertirán en tu compañero perfecto para
+                            cualquier ocasión.
+                        </p>
+                        <a class="btn btn-primary" href="" role="button">COMPRAR</a>
+                    </div>
+                </div>
+                <p><a href="#product">X</a></p>
+            </div>
+
+            <div class="modal" id="modal-solarchic">
+                <div class="information">
+                    <div class="girl">
+                        <h4>Gafas Gucci SolarChic</h4>
+                        <img src="img/gucci/modelsolarchic.png" alt="gafas gucci solarchic">
+                    </div>
+                    <div class="text">
+                        <h5>PRECIO</h5>
+                        <p>240€</p>
+                        <h5>COLOR</h5>
+                        <p>Acetato Rosado</p>
+                        <h5>DESCRIPCIÓN</h5>
+                        <p>Las gafas de SolarChic con una montura de acetato de alta calidad en un color negro mate
+                            destacan por su diseño contemporaneo y atemporal. Estas gafas ofrecen una protección
+                            excepcional contra los rayos ultravioletas, mejorando la claridad visual.
+                            <br>
+                            Con lentes de alta calidad que bloquean el 100% de los dañinos rayos UVA y UVB, estas gafas
+                            de sol te brindan una protección superior para tus ojos bajo el resplandor del sol.
+                        </p>
+                        <a class="btn btn-primary" href="" role="button">COMPRAR</a>
+                    </div>
+                </div>
+                <p><a href="#product">X</a></p>
+            </div>
+
+            <div class="modal" id="modal-redcat">
+                <div class="information">
+                    <div class="girl">
+                        <h4>Gafas Gucci RedCat</h4>
+                        <img src="img/gucci/modelredcat.png" alt="gafas gucci redcat">
+                    </div>
+                    <div class="text">
+                        <h5>PRECIO</h5>
+                        <p>160€</p>
+                        <h5>COLOR</h5>
+                        <p>Acetato Negro</p>
+                        <h5>DESCRIPCIÓN</h5>
+                        <p>Las gafas de sol Gucci RedCat son la combinación perfecta de estilo y funcionalidad. Mientras
+                            proteges tus ojos de los rayos del sol destacas con un look moderno y llamativo.
+                            <br>
+                            La ligereza de estas gafas hacen que sean cómodas de llevar sin dejar marcas ni en nariz ni
+                            orejas. Podrán ser tu mejor compañía durante todo el día.
+                        </p>
+                        <a class="btn btn-primary" href="" role="button">COMPRAR</a>
+                    </div>
+                </div>
+                <p><a href="#product">X</a></p>
+            </div>
+
+            <div class="modal" id="modal-misticcat">
+                <div class="information">
+                    <div class="girl">
+                        <h4>Gafas Gucci MisticCat</h4>
+                        <img src="img/gucci/modelmisticcat.png" alt="gafas gucci misticcat">
+                    </div>
+                    <div class="text">
+                        <h5>PRECIO</h5>
+                        <p>220€</p>
+                        <h5>COLOR</h5>
+                        <p>Acetato Marfil</p>
+                        <h5>DESCRIPCIÓN</h5>
+                        <p>Las gafas mistic cat cuentan con una montura resistente y duradera, lo que las convierte en
+                            unas compañeras de confianza para aventuras al aire libre o en interiores.
+                            <br>
+                            Estas gafas están fabricadas con tecnología anti reflejo, lo que no solo reduce los reflejos
+                            del sol, sino también mejora la nitidez y la claridad visual cuando la luz es intensa.
+                        </p>
+                        <a class="btn btn-primary" href="" role="button">COMPRAR</a>
+                    </div>
+                </div>
+                <p><a href="#product">X</a></p>
+            </div>
+
+            <div class="modal" id="modal-suntropic">
+                <div class="information">
+                    <div class="girl">
+                        <h4>Gafas Gucci Suntropic</h4>
+                        <img src="img/gucci/modelsuntropic.png" alt="gafas gucci suntropic">
+                    </div>
+                    <div class="text">
+                        <h5>PRECIO</h5>
+                        <p>180€</p>
+                        <h5>COLOR</h5>
+                        <p>Acetato Negro</p>
+                        <h5>DESCRIPCIÓN</h5>
+                        <p>Las gafas de sol Gucci Suntropic son mucho más que una protección contra el sol; son una
+                            expresión de tu estilo personal. Ya sea que te estés relajando en la playa, explorando la
+                            ciudad o disfrutando de actividades al aire libre, estas gafas te brindarán un toque de
+                            sofisticación y confianza en cada paso que des.
+                            <br>
+                            No te conformes con cualquier cosa, lleva tu estilo al siguiente nivel.
+                        </p>
+                        <a class="btn btn-primary" href="" role="button">COMPRAR</a>
+                    </div>
+                </div>
+                <p><a href="#product">X</a></p>
+            </div>
+        </section>
     </main>
 
     <footer>
