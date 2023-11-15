@@ -39,7 +39,7 @@ header {
     position: sticky;
     top: calc(-100vh + 8%);
     z-index: 1;
-    background-image: url(../img/gucci/patrongucci.png);
+    background-image: url(../img/prada/patronprada.png);
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
@@ -406,12 +406,12 @@ h3 {
     text-decoration: none;
 }
 
-#modal-sunflare:target,
-#modal-radiantretro:target,
-#modal-solarchic:target,
-#modal-redcat:target,
-#modal-misticcat:target,
-#modal-suntropic:target {
+#modal-runway:target,
+#modal-moon:target,
+#modal-cacoa:target,
+#modal-sunrise:target,
+#modal-symbole:target,
+#modal-ocean:target {
     opacity: 1;
     visibility: visible;
 }

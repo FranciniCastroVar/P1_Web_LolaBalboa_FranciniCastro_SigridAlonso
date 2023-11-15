@@ -16,22 +16,68 @@
     --quaternary-color: #363636;
 }
 
+
+/* VALORES */
+#values {
+    width: 100%;
+    padding: 5% 0;
+    /* background-color: rgb(73, 34, 119); */
+}
+
+h5 {
+    /* color: white; */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+h6 {
+    /* color: white; */
+    font-size: 1.5em;
+    margin-bottom: 3%;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    margin: 2%;
+    padding: 2%;
+    /* background-color: rgb(124, 61, 195); */
+    border-radius: 10%;
+    /* box-shadow: 5px 5px 10px rgb(48, 23, 77); */
+    transition: ease-in-out 0.5s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+/* .box > p {
+    color: white;
+} */
+
+
 /* FORMULARIO */
-main>form{
+#subscribe>form{
     padding: 5%;
     display: flex;
     flex-direction: column;
 }
 
-main>form>.form{
+#subscribe>form>.form{
     font-size: 1.1em;
     color: var(--primary-color);
 }
 
-main>form>.col-12{
+#subscribe>form>.col-12{
     padding: 1%;
 }
 
-main>form>.col-12>button{
+#subscribe>form>.col-12>button{
     background-color: var(--primary-color);
 }
