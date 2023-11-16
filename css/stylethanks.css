@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Questrial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-primary-tah: 'Questrial', sans-serif;
+    --font-secundary-tah: 'Lilita One', sans-serif;
+    --primary-color: #F34213;
+    --secondary-color: #FBFBFF;
+    --tertiary-color: #F1F2EE;
+    --quaternary-color: #363636;
+}
+
+
+/* HEADER */
+h1,
+h2 {
+    color: var(--tertiary-color);
+    font-family: var(--font-secundary-tah);
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+header>p {
+    color: var(--tertiary-color);
+    font-size: 2em;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    z-index: 1;
+    background-image: url(../img/fondonews.png);
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo>img {
+    width: 20%;
+}
+
+header>a {
+    width: 25%;
+    margin-top: 5%;
+    text-decoration: none;
+}
+
+.back {
+    padding: 6%;
+    color: var(--tertiary-color);
+    font-size: 1.4em;
+    text-align: center;
+    border: 0.2em white solid;
+}
+
+.back>p {
+margin-bottom: 0;}
+
+.back>p:hover {
+    font-weight: bold;
+    transform: scale(120%);
+}

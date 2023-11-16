@@ -92,7 +92,7 @@ section {
     width: 80%;
     height: 92%;
     margin: 0 auto;
-    padding: 7% 0 3%;
+    padding: 7% 0 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,7 +111,6 @@ h4 {
 h5 {
     color: var(--primary-color);
     font-family: var(--font-secundary-tah);
-    /* text-transform: uppercase; */
     font-size: 1.5em;
     margin-bottom: 3%;
 }
@@ -122,13 +121,10 @@ h5 {
 }
 
 .box {
-    /* width: 300px; */
-    /* height: 200px; */
     margin: 2%;
     padding: 2%;
     background-color: var(--tertiary-color);
     border: var(--quaternary-color) solid;
-    /* border-radius: 10%; */
     transition: ease-in-out 0.5s;
 }
 
@@ -142,23 +138,40 @@ h5 {
 
 
 /* FORMULARIO */
-#subscribe>form{
-    padding: 5%;
+#subscribe>h4 {
+    padding-bottom: 2%;
+}
+
+form {
+    padding: 2% 4%;
+    background-color: #363636d8;
     display: flex;
     flex-direction: column;
 }
 
-#subscribe>form>.form{
-    font-size: 1.1em;
-    color: var(--primary-color);
+#subscribe label {
+    color: var(--secondary-color);
+    font-size: 1.25em;
 }
 
-#subscribe>form>.col-12{
-    padding: 1%;
+.col-md-4,
+.col-md-6,
+.col-md-3,
+.mb-3,
+.col-12 {
+    padding-bottom: 2%;
+    width: 100%;
 }
 
-#subscribe>form>.col-12>button{
+.col-12>a>button {
     background-color: var(--primary-color);
+    border: none;
+    padding: 1.5% 3%;
+    font-size: 1.15em;
+}
+
+.col-12>a>button:hover {
+    background-color: var(--quaternary-color);
 }
 
 
