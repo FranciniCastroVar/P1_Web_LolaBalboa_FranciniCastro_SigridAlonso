@@ -22,6 +22,8 @@ h1,
 h2 {
     color: var(--tertiary-color);
     font-family: var(--font-secundary-tah);
+    text-align: center;
+    padding: 0 5%;
 }
 
 h1 {
@@ -34,7 +36,9 @@ h2 {
 
 header>p {
     color: var(--tertiary-color);
-    font-size: 2em;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 2% 8% 5% 8%;
     text-align: center;
 }
 
@@ -79,9 +83,52 @@ header>a {
 }
 
 .back>p {
-margin-bottom: 0;}
+    margin-bottom: 0;
+}
 
 .back>p:hover {
     font-weight: bold;
     transform: scale(120%);
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 980px) {
+    .back>p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    header>p {
+        font-size: 1.2em;
+        padding-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo>img {
+        width: 16%;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .back>p {
+        font-size: 0.6em;
+    }
+
+    .back {
+        padding: 20% 7%;
+    }
 }

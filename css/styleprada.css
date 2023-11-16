@@ -289,7 +289,7 @@ h3 {
 
 /* GALERÍA */
 #product {
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .galery {
@@ -498,6 +498,16 @@ footer>p {
 
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1300px) {
+    .text>h5 {
+        font-size: 1.2em;
+    }
+
+    .text>p {
+        font-size: 0.8em;
+    }
+}
+
 @media screen and (max-width: 1090px) {
     #legal {
         display: flex;
@@ -509,7 +519,7 @@ footer>p {
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 950px) {
     #menu>i {
         padding-left: 3%;
         display: block;
@@ -572,17 +582,123 @@ footer>p {
         color: var(--quaternary-color);
     }
 
-    .dropdown-menu {
-        color: var(--quaternary-color);
-        background-color: #f1f2eedd;
-        width: 90%;
+    .newproduct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .dropdown-menu>li:hover {
-        background-color: var(--primary-color);
+    .left {
+        margin-top: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
 
-    .dropdown-menu>li>a {
-        color: var(--quaternary-color);
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .attribute,
+    .other {
+        width: 160%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    h1 {
+        font-size: 3.8em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    .galery {
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    #menu>ul>li>a {
+        font-size: 2.5em;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .girl>h4 {
+        font-size: 1.5em;
+    }
+
+    .text>h5 {
+        font-size: 1em;
+    }
+
+    .text>p {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 3.2em;
+    }
+
+    h2 {
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    h3 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #menu>ul>li>a {
+        font-size: 2.4em;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    h1 {
+        font-size: 2.6em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #menu>ul>li>a {
+        font-size: 2em;
+    }
+
+    .text>h5 {
+        font-size: 0.8em;
+    }
+
+    .text>p {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    #menu>ul>li>a {
+        font-size: 1.6em;
     }
 }
