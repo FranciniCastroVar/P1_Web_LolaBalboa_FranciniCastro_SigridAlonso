@@ -1,25 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEWS</title>
+    <title>NEWSLETTER</title>
 
-    <link rel="stylesheet" href="css\bootstrap.min.css">
-    <link rel="stylesheet" href="css\stylenews.css" type="text/css">
+    <link href="img/logoglowy.png" rel="icon" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Questrial&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/stylenews.css" type="text/css">
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a4c92e0f59.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <h1>¡ÚNETE A NUESTRA COMUNIDAD!</h1>
+        <h2>SUSCRÍBETE A NUESTRA NEWSLETTER</h2>
+        <h3>Tienes la oportunidad de descubrir todas las nuevas tendencias, <br> colaboraciones y promociones exclusivas
+            ¡antes que las demás!</h3>
 
+        <p>Entérate antes que el resto de las MEJORES REBAJAS en tus marcas favoritas de gafas de sol, <br> ¡ese
+            complemento ideal que no puede faltar en tus outfits!</p>
+
+        <p>Inspírate de tus celebrities referentes para buscar tu propio estilo incluyendo ¡UN TOQUE GLOWY!</p>
+
+        <p>Tendrás nuevas IDEAS, CONSEJOS e INSPIRACIÓN a tu alcance en tu correo electrónico.</p>
+        <p>Todo lo que necesitas saber sobre cómo conjuntar tus gafas Glowy.</p>
+
+        <div class="logo">
+            <img src="img/logoglowyblanco.png" alt="logo">
+        </div>
     </header>
+
     <main>
+        <section id="values">
+            <h4>NUESTROS VALORES</h4>
+            <div class="tag">
+                <div class="box">
+                    <h5>Autenticidad</h5>
+                    <p>La pasión por la moda se une con la misión de ofrecerte unas gafas de sol que te transmitan
+                        confianza y
+                        empoderamiento cuando las lleves.</p>
+                </div>
+                <div class="box">
+                    <h5>Protección</h5>
+                    <p>No solo protegemos tus ojos del sol, sino que también te hacemos destacar vayas donde vayas.</p>
+                </div>
+                <div class="box">
+                    <h5>Estilo</h5>
+                    <p>La elegancia y la funcionalidad se reflejan en nuestras gafas de sol, convirtiéndose en tu estilo
+                        de vida.</p>
+                </div>
+            </div>
+            <div class="tag">
+                <div class="box">
+                    <h5>Oportunidad</h5>
+                    <p>Siempre nos preocupamos por vosotras, para que estéis a la última moda por un precio más bajo y
+                        accesible para todas.</p>
+                </div>
+                <div class="box">
 
+                    <h5>Conexión</h5>
+                    <p>En Glowy, vamos más allá de tus expectativas, te ofrecemos gafas de sol que son la mezcla
+                        perfecta entre
+                        elegancia, comodidad y protección visual.</p>
+                </div>
+                <div class="box">
+                    <h5>Innovación</h5>
+                    <p>Si buscas ver las cosas de otra forma, en Glowy te ayudamos a que todo tenga una perspectiva
+                        diferente.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="subscribe">
+            <h4>SUSCRÍBETE A NUESTRA NEWSLETTER</h4>
+
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <label for="validationDefault01" class="form-label">NOMBRE</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Escribe tu nombre"
+                        required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">APELLIDOS</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Escribe tus apellidos"
+                        required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">CORREO ELECTRÓNICO</label>
+                    <input type="email" class="form-control" id="inputEmail4"
+                        placeholder="Introduce tu correo electrónico" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="validationDefault04" class="form-label">PREFERENCIA DE MARCA</label>
+                    <select class="form-select" id="validationDefault04" required>
+                        <option selected disabled value="">Elige una marca...</option>
+                        <option>DIOR</option>
+                        <option>GUCCI</option>
+                        <option>PRADA</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">AÑADIR COMENTARIOS</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                        placeholder="Escribe tus comentarios" rows="3"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                        <label class="form-check-label" for="gridCheck">
+                            Acepto todos los términos y las condiciones
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <a href="thanks.html">
+                        <button type="button" class="btn btn-primary">ENVIAR FORMULARIO</button>
+                    </a>
+                </div>
+            </form>
+        </section>
     </main>
-    <footer>
 
+    <footer>
+        <figure>
+            <img src="img/logoglowyblanco.png" alt="logo">
+            <figcaption>
+                <p>© 2023 Glowy Outlet</p>
+            </figcaption>
+        </figure>
+
+        <p>¡Síguenos en nuestras redes sociales para no
+            perderte nada!</p>
+
+        <div class="contact">
+            <div class="email">
+                <a href="mailto:GlowyOutlet@gmail.com" target="_blank">Email. GlowyOutlet@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="socialmedia">
+            <div class="social">
+                <a href="https://twitter.com/gucci?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <div class="social">
+                <a href="https://www.instagram.com/gucci/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/GUCCI/?locale=es_ES" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+        <div id="legal">
+            <p>CONDICIONES GENERALES</p>
+            <p>AVISO LEGAL</p>
+            <p>POLÍTICA DE PRIVACIDAD</p>
+            <p>POLÍTICA DE COOKIES</p>
+        </div>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
